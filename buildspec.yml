@@ -9,5 +9,5 @@ phases:
   build:
     commands:
       - echo  "$DOCKER_PASSWORD" | docker login -u  "$DOCKER_ID" --password-stdin
-      - docker build -t $DOCKER_ID/DOCKER_REPOSITORY .
-      - docker push $DOCKER_ID/DOCKER_REPOSITORY
+      - docker build -t $DOCKER_ID/$DOCKER_REPOSITORY .
+      - docker push $DOCKER_ID/$DOCKER_REPOSITORY
